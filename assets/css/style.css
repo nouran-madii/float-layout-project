@@ -1,0 +1,401 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.container{
+    padding-inline: 80px;
+}
+
+/* start nav */
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 5px 1px 3px whitesmoke;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    padding-block: 20px;
+}
+
+nav img{
+    float: left;
+    padding-top: 5px;
+    width: 15%;
+}
+
+nav ul li{
+    display: inline;
+    padding-inline: 15px;
+    font-size: 18px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: gray;
+}
+/* end nav */
+
+/* start home */
+#home{
+    height: 100dvh;
+    background-image: url('../imgs/homeBg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home-content{
+    text-align: center;
+    margin-top: 200px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+p{
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+.home-content p{
+    font-size: 22px;
+}
+
+h1, h2, h3, h4, nav ul li{
+    font-family: "Alegreya", serif;
+    font-weight: 400
+}
+
+.home-content h1{
+    font-size: 76px;
+}
+
+.home-buttons{
+    padding-top: 25px;
+}
+
+.home-buttons button{
+    font-family: "Alegreya Sans", sans-serif;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 20px 30px;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.learn-btn{
+    background-color: #8e7754;
+    border: none;
+}
+
+.contact-btn{
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.learn-btn:hover, .contact-btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+/* end home */
+
+/* start second section */
+#whoWeAre{
+    padding-block: 100px;
+    overflow: auto;
+}
+
+#whoWeAre img{
+    width: 52%;
+    float: left;
+    padding-right: 65px;
+}
+
+#whoWeAre .whoWeR-content{
+    padding-top: 40px;
+}
+
+#whoWeAre .whoWeR-content h2{
+    color: gray;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+#whoWeAre .whoWeR-content p{
+    font-size: 17px;
+    line-height: 1.8;
+    padding-block: 10px;
+}
+
+#whoWeAre .whoWeR-content i{
+    border-radius: 50%;
+    border: rgba(0, 0, 0, 0.2) solid 1px;
+    font-size: 18px;
+    color: #8e7754;
+    padding: 15px;
+    margin-right: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* end second section */
+
+/* start location */
+#location{
+    padding-block: 100px;
+    background-color: whitesmoke;
+    overflow: auto;
+}
+
+#location img{
+    width: 50%;
+}
+
+#location .location-content{
+    padding-top: 120px;
+    padding-right: 45px;
+    width: 50%;
+    float: left;
+    /* background-color: #8e7754; */
+}
+
+#location .location-content h2{
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+#location .location-content p{
+    color: gray;
+    font-size: 17px;
+    line-height: 1.7;
+    padding-block: 10px;
+}
+/* end location */
+
+/* start baking page */
+#baking{
+    text-align: center;
+}
+
+#baking h3{
+    font-size: 30px;
+}
+
+#baking p{
+    font-size: 17px;
+    color: gray;
+}
+
+.baking-heading{
+    padding-block: 60px;
+    line-height: 2.5;
+}
+
+.baking-content{
+    overflow: auto;
+    padding-inline: 60px;
+    padding-bottom: 80px;
+}
+
+.baking-content h4{
+    font-size: 22px;
+}
+
+.baking-content div{
+    line-height: 2;
+    width: 33.3%;
+    float: left;
+    padding-inline: 20px;
+}
+
+.baking-content img{
+    width: 100%;
+}
+
+#baking i{
+    position: fixed;
+    bottom: 10px;
+    border: 2px solid gray;
+    right: 10px;
+    padding: 12px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.clear-fix{
+    clear: both;
+}
+/* end baking page */
+
+/* start contact */
+#contact{
+    padding-block: 100px;
+    background-color: whitesmoke;
+    overflow: auto;
+}
+
+#contact iframe{
+    width: 45%;
+    height: 500px;
+}
+
+#contact .contact-content{
+    padding-top: 40px;
+    float: left;
+    width: 50%;
+}
+
+#contact .contact-content h2{
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+#contact .contact-content p{
+    color: gray;
+    font-size: 17px;
+    line-height: 1.8;
+    padding-block: 10px;
+}
+
+#contact .contact-content h4{
+    color: gray;
+    padding-block: 30px;
+}
+
+#contact .contact-content i{
+    border-radius: 50%;
+    background-color: #8e7754;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* end contact */
+
+/* start last section */
+#last-sec{
+    background-color: #403D38;
+    padding: 50px;
+    overflow: auto;
+}
+
+#last-sec h4{
+    padding-block: 25px;
+    color: white;
+    font-size: 18px;
+}
+
+#last-sec p, #last-sec a{
+    color: gray;
+    text-decoration: none;
+    line-height: 1.5;
+    border-bottom: 1px solid;
+    padding-block: 10px;
+}
+
+#last-sec i{
+    padding-right: 5px;
+}
+
+#last-sec .parent{
+    padding: 20px;
+    width: 25%;
+    float: left;
+}
+
+#last-sec .b-none{
+    border: none;
+}
+
+.div4 a{
+    display: block;
+    font-family: "Alegreya sans", sans-serif;
+}
+/* end last section */
+
+/* start footer */
+footer{
+    padding-block: 50px;
+    text-align: center;
+    background-color: #353330;
+}
+
+footer p{
+    color: gray;
+    padding-block: 20px;
+}
+
+footer div{
+    margin-top: 10px;
+}
+
+footer a{
+    color: gray;
+    border: 1px none;
+    border-radius: 50%;
+    padding: 12px ;
+    margin-inline: 2px;
+    background-color: #403D38;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+footer .facebook{
+    padding-inline: 15px;
+}
+
+footer a:hover{
+    color: white;
+}
+
+footer .facebook:hover{
+    background-color: #3B5998;
+}
+
+footer .google:hover{
+    background-color: tomato;
+}
+footer .linkedin:hover{
+    background-color: #007BB5;
+}
+footer .twitter:hover{
+    background-color:#00ACED;
+}
+/* end footer */
