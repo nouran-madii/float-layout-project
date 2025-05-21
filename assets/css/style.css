@@ -47,6 +47,10 @@ nav ul li a{
     text-decoration: none;
     color: gray;
 }
+
+nav ul li a:hover{
+    color: #8e7754;
+}
 /* end nav */
 
 /* start home */
